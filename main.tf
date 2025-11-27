@@ -126,7 +126,7 @@ resource "aws_eks_node_group" "devopsshack" {
   }
 }
 
-resource "aws_iam_role" "devopsshack_cluster_role" {
+resource "aws_iam_roles" "devopsshack_cluster_role" {
   name = "devopsshack-cluster-role"
 
   assume_role_policy = <<EOF
